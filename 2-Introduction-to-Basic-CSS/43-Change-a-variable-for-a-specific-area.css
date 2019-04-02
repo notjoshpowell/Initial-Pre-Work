@@ -1,6 +1,7 @@
 /* i learned that variable values can be changed within a class e.g if
 red in :root, the class could be another color if the variable is restated
 with the desired color change.  */
+
 <style>
   :root {
     --penguin-skin: gray;

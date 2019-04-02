@@ -1,0 +1,34 @@
+/* I learned that flex containers set as a row read/places items left-right,
+and that each item has a line through it's directional center (row=horizontal,
+column=vertical) called the main axis. To space the main axis, one can use
+justify-content: center; which aligns the flex items to the center inside the flex
+container. There is also flex-start (aligns items to the beginning of the flex
+container), flex-end (aligns items to the end of a flex container), space-between
+(aligns items to the center of the main axis, with extra space placed between the
+items - first and last are left and right), and space-around (space is distributed
+around each item, elements are not pushed to the edge of the container)*/
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
