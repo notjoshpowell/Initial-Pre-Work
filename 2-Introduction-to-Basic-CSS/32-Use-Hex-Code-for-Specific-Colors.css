@@ -1,0 +1,11 @@
+/* I learned about hexadecimal, or hex code for specifying colors. Hex code is
+base 16, so it counts from 0-9 and then A-F for 16 possible values. CSS uses 6
+hexadecimal values to represent colors, two for red, green and blue components.
+They are called using # before the number e.g color: #010101
+*/
+
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>

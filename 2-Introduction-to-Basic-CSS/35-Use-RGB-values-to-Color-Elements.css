@@ -1,0 +1,9 @@
+/* I learned that you can also use RGB values to specify an element's color.
+Since there are two digits for each color with 16 values each colors are listed
+between 0-255 (16*16 = 256 count from 0) in use: color-name: rgb(#, #, #) */
+
+<style>
+  body {
+    background-color: rgb(0,0,0);
+  }
+</style>

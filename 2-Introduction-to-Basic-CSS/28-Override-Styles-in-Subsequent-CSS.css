@@ -1,0 +1,19 @@
+/* I learned that the order of class declarations in the style tags matter,
+in that the second will take priority over first, third over second, etc.
+if one class is listed further down than the other class, the former will
+take priority */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>

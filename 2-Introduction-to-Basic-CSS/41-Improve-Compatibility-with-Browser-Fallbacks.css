@@ -1,0 +1,19 @@
+/* I learned that IE does not support CSS variables (some browseres don't recognize
+some CSS properties). In these cases, browsers use whatever value it has for that
+property, or a default value.
+By declaring a more widely support value immediately before the unsupported
+declaration, the older browser will use that, while the newer browser will interpret
+the previously unsupported declaration. */
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
