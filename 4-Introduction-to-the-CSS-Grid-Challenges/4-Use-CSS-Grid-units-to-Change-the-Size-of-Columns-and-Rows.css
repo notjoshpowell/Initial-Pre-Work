@@ -1,0 +1,35 @@
+/* I learned that grid-container-rows and grid-container-columns can also be
+defined by auto (sets row height or column width to the respective size of
+its content), % (sets the column or row to the percent width or height of its
+container) and fr (adjusts the column or row to a fraction of the remaining
+available space within the container). Can use intergers and float-point for fr
+and %. */
+
+<style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* modify the code below this line */
+
+    grid-template-columns: 1fr 100px 2fr;
+
+    /* modify the code above this line */
+    grid-template-rows: 50px 50px;
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
